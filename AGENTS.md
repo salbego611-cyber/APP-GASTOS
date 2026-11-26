@@ -23,6 +23,14 @@ npx expo install --fix      # fix incompatible package versions
 
 Run lint and typecheck before declaring any task done.
 
+## Testes automatizados de implementação
+
+- Para cada funcionalidade nova, mudança de comportamento ou correção no app, crie ou amplie testes automatizados que cubram os critérios de aceite. Versione esses testes junto com a alteração e execute-os antes de concluir o trabalho.
+- Valide pelo caminho que a pessoa usa no app. Ao criar uma seção, por exemplo, navegue até a tela e verifique se a seção aparece e exibe os valores esperados. Se houver ação ou cálculo, execute a ação e confira o resultado no local em que ela deve surtir efeito, como o saldo, o orçamento ou a fatura. Se a mudança deve persistir, reabra e confira os dados salvos.
+- Use dados de teste isolados e valores esperados definidos a partir do requisito. Nos fluxos financeiros, inclua um caso que detecte contagem duplicada ou aplicação no período incorreto quando esse risco existir. Nos testes de integração, use o banco e as regras do app, substituindo apenas dependências externas necessárias ao teste.
+- Verifique que o teste falha pelo motivo esperado na versão sem a mudança ou, quando isso não for viável, com o comportamento testado temporariamente desativado em ambiente isolado. Depois confirme que passa com a implementação. Uma falha de configuração e um teste pulado não comprovam a cobertura.
+- Informe os cenários e comandos executados, o resultado e as plataformas que foram validadas. Lint e verificação de tipos complementam os testes funcionais. Se um cenário essencial não puder ser executado, indique o bloqueio e mantenha a validação desse cenário pendente.
+
 ## Backups de versão
 
 Antes de alterar uma versão entregue ou instalar uma atualização, preserve uma cópia do código-fonte da versão anterior e do APK exato entregue. Guarde o arquivo fora do projeto, verifique que ele abre e que o APK confere com o original. Mantenha os backups anteriores e exclua dos arquivos de versão os dados pessoais do aparelho e do navegador.
