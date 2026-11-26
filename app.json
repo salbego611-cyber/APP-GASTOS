@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Bolso em Dia",
+    "slug": "bolso-em-dia",
+    "scheme": "bolsoemdia",
+    "version": "1.4.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "android": {
+      "package": "br.com.bolsoemdia.app",
+      "allowBackup": false,
+      "versionCode": 6
+    },
+    "ios": {
+      "bundleIdentifier": "br.com.bolsoemdia.app",
+      "supportsTablet": true
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "headers": {
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Embedder-Policy": "credentialless"
+          }
+        }
+      ],
+      "expo-sqlite",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#123F33",
+          "image": "./assets/bolso-icon.png",
+          "imageWidth": 160
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/bolso-icon.png"
+    },
+    "icon": "./assets/bolso-icon.png"
+  }
+}
